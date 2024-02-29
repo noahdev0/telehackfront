@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
-import { IoCloseSharp } from "react-icons/io5";
+import { IoCloseSharp, IoHome, IoSettings } from "react-icons/io5";
 import InfoCard from "@/components/InfoDisplay";
 import Sidebar from "@/components/shared/Sidebar";
 import { HandleComlaint } from "@/components/shared/handle-comlaint";
@@ -58,9 +58,16 @@ export default function Page() {
     {
       linkClass: linkClass,
       ListClass: ListClass,
-      Icon: IoCloseSharp,
+      Icon: IoHome,
       title: "Dashboard",
       url: "user/test1",
+    },
+    {
+      linkClass: linkClass,
+      ListClass: ListClass,
+      Icon: IoSettings,
+      title: "Users",
+      url: "user/test2",
     },
     {
       linkClass: linkClass,
